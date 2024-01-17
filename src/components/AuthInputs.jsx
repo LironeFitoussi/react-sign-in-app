@@ -7,6 +7,18 @@ const ControlContainer = styled.div`
   gap: 0.5rem;
   margin-bottom: 1.5rem;
 `
+
+const = styled.Label`
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6b7280;
+`
+
+
 export default function AuthInputs() {
   const [enteredEmail, setEnteredEmail] = useState('');
   const [enteredPassword, setEnteredPassword] = useState('');
@@ -31,7 +43,7 @@ export default function AuthInputs() {
     <div id="auth-inputs">
       <ControlContainer>
         <p>
-          <label>Email</label>
+          <Label>Email</Label>
           <input
             type="email"
             style={{
